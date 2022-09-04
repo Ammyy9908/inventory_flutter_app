@@ -1,3 +1,4 @@
+import 'package:first_app/Home.dart';
 import 'package:flutter/material.dart';
 
 
@@ -6,18 +7,15 @@ void  main(List<String> args) {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+   
+
+  int days = 30;
+  String name = "Sumit";
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Material(
-        child:Center(
-          child: Container(
-              child: Text('Hello World'),
-            ),
-        )
-      ),
+      home: Home(),
     );
   }
 }
